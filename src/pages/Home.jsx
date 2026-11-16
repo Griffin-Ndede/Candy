@@ -15,16 +15,16 @@ export default function Home() {
           data-reveal
           className="relative z-10 w-full max-w-3xl translate-y-6 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
         >
-          <p className="mb-4 block text-xl font-light text-saddle">
+          {/* <p className="mb-4 block text-xl font-light text-saddle">
             This part of my life is called
-          </p>
+          </p> */}
 
           <h1 className=" text-xl text-espresso md:text-6xl">
             Happy Birthday,
           </h1>
           <span className="block font-script text-saddle text-8xl">Sweets</span>
 
-          <p className="mx-auto mt-5 mb-8 max-w-lg text-lg leading-relaxed text-muted">
+          <p className="mx-auto mt-5 mb-8 max-w-2xl text-lg leading-relaxed text-muted">
             To the girl who makes my world softer, brighter, and so much more
             beautiful.
           </p>
@@ -65,7 +65,7 @@ export default function Home() {
               disabled={!music.ready}
             >
               <span>{music.playing ? "Ⅱ" : "♫"}</span>
-              {music.playing ? "Pause Our Song" : "Play Our Song"}
+              {music.playing ? "Pause the Song" : "Play the Song"}
             </button>
             <p className="mt-2 text-xs text-muted">
               Music may require a tap before it can play with sound.
@@ -88,14 +88,17 @@ export default function Home() {
           data-reveal
           className="max-w-2xl translate-y-6 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
         >
-          <p className="mb-1 text-xl font-light text-saddle">This part of my life is called</p>
+          <p className="mb-1 text-xl font-light text-saddle">
+            This part of my life is called
+          </p>
           <h2 className="mb-5 font-script text-6xl text-espresso md:text-7xl">
-            My favourite person and best friend
+            A dedication to my favourite person and best friend
           </h2>
           <p className="leading-loose text-muted">
-            Some people make life feel like a love song. You are one of the most beautiful parts of my life. This little
-            corner of the internet is for us: for the moments we have shared,
-            the memories I hold close, and all the ones still waiting for us.
+            You are one of the most beautiful part of my life Some people make life feel like a love song. You are one of the most
+            beautiful parts of my life. This little corner of the internet is
+            for us: for the moments we have shared, the memories I hold close,
+            and all the ones still waiting for us.
           </p>
           <span className="mt-6 block font-script text-3xl text-saddle">
             With all my love, always ♥

@@ -43,7 +43,7 @@ export default function Layout() {
 
       <Outlet context={{ rainHearts, music }} />
 
-      <Finale onRainHearts={rainHearts} />
+      {/* <Finale onRainHearts={rainHearts} /> */}
     </main>
   );
 }

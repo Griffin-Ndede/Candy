@@ -251,10 +251,11 @@ export const memories = captions.map((caption, i) => ({
 }));
 
 export const letter = {
-  title: "To my Candy,",
+  title: "Sweets,",
   paragraphs: [
-    "Happy birthday, my love. I hope this new chapter of your life brings you joy, peace, laughter, and all the beautiful things your heart has been wishing for.",
-    "Thank you for being you. Thank you for the memories, the smiles, the conversations, and the little moments that have become so precious to me. You make my world more meaningful just by being part of it.",
-    "I hope we keep finding reasons to laugh together, places to explore, dreams to chase, and memories to look back on with happy hearts. There is still so much of our story left to write.",
+    "Happy birthday, Sweets. I hope this new chapter of your life brings you joy, peace, laughter, and all the beautiful things your heart has been wishing for.",
+    "You are the kindest person I know and it shows in every story you tell me about how you day has been and how much you care about the kids you teach.",
+    "Thank you for being you and for always being a child at heart. Thank you for the memories, the bible verses, the smiles, the conversations, your support, and the little moments that have become so precious to me. You make my world more meaningful just by being part of it.",
+    "I hope we keep finding reasons to laugh together, places to explore Mombasa sana sana ma chunowa, dreams to chase, and memories to look back on with happy hearts. There is still so much of our story left to write.",
   ],
 };
