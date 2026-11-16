@@ -15,8 +15,8 @@ export default function Home() {
           data-reveal
           className="relative z-10 w-full max-w-3xl translate-y-6 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
         >
-          <p className="mb-4 block  font-light text-xl  text-saddle">
-            A little website, made with love
+          <p className="mb-4 block text-xl font-light text-saddle">
+            This part of my life is called
           </p>
 
           <h1 className=" text-xl text-espresso md:text-6xl">
@@ -88,15 +88,12 @@ export default function Home() {
           data-reveal
           className="max-w-2xl translate-y-6 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
         >
-
-          <span className="mb-4 block  font-light text-xl  text-saddle">
-            To my favourite person and best friend.
-          </span>
-          <h2 className="mb-5 font-script text-5xl text-espresso md:text-6xl">
-            Some people make life feel like a love song.
+          <p className="mb-1 text-xl font-light text-saddle">This part of my life is called</p>
+          <h2 className="mb-5 font-script text-6xl text-espresso md:text-7xl">
+            My favourite person and best friend
           </h2>
           <p className="leading-loose text-muted">
-            You are one of the most beautiful parts of my life. This little
+            Some people make life feel like a love song. You are one of the most beautiful parts of my life. This little
             corner of the internet is for us: for the moments we have shared,
             the memories I hold close, and all the ones still waiting for us.
           </p>

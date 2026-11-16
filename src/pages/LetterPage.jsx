@@ -19,15 +19,13 @@ export default function LetterPage() {
           data-reveal
           className="mx-auto max-w-2xl translate-y-6 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
         >
-          <span className="mb-4 block text-xs font-bold tracking-widest text-saddle uppercase">
-            A little reminder
-          </span>
-          <div className="mb-4 animate-beat text-7xl text-caramel" aria-hidden="true">♥</div>
-          <h2 className="mb-5 font-script text-5xl text-espresso md:text-6xl">
-            You are loved more than words can say.
+          <p className="mb-1 text-xl font-light text-saddle">This part of my life is called</p>
+          <h2 className="mb-5 font-script text-6xl text-espresso md:text-7xl">
+            Love
           </h2>
+          <div className="mb-4 animate-beat text-7xl text-caramel" aria-hidden="true">♥</div>
           <p className="mx-auto mb-8 max-w-xl leading-loose text-muted">
-            On your birthday and on every ordinary day, I hope you remember how special you
+            You are loved more than words can say. On your birthday and on every ordinary day, I hope you remember how special you
             are to me.
           </p>
           <button

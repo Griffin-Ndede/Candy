@@ -7,12 +7,10 @@ export default function Finale({ onRainHearts }) {
         className="mx-auto max-w-2xl translate-y-6 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
       >
         <div className="mb-6 animate-beat-slow text-4xl tracking-widest text-caramel" aria-hidden="true">♡ ♥ ♡</div>
-        <span className="mb-4 block text-xs font-bold tracking-widest text-sand uppercase">
-          And the story continues...
-        </span>
-        <h2 className="mb-5 font-script text-5xl text-cream md:text-6xl">Happy Birthday, Candy.</h2>
+        <p className="mb-1 text-xl font-light text-sand">This part of my life is called</p>
+        <h2 className="mb-5 font-script text-6xl text-cream md:text-7xl">Forever</h2>
         <p className="mb-6 leading-loose text-sand">
-          Here is to more laughter, more adventures, more photographs, and more beautiful
+          Happy Birthday, Candy. Here is to more laughter, more adventures, more photographs, and more beautiful
           moments with you.
         </p>
         <button
