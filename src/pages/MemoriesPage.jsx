@@ -21,7 +21,7 @@ export default function MemoriesPage() {
         data-reveal
         className="mx-auto mb-16 max-w-2xl translate-y-6 text-center opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
       >
-        <span className="mb-4 block text-xs font-bold tracking-widest text-saddle uppercase">
+        <span className="mb-4 block  font-bold  text-saddle ">
           Our little love story
         </span>
         <h2 className="mb-5 font-script text-5xl text-espresso md:text-6xl">
@@ -50,9 +50,9 @@ export default function MemoriesPage() {
                 </div>
                 <FloatingHeart corner={m.side === "left" ? "left" : "right"} />
               </div>
-              <span className="mt-3 block text-center text-xs tracking-widest text-muted uppercase">
+              {/* <span className="mt-3 block text-center   text-muted ">
                 Memory {String(index + 1).padStart(2, "0")}
-              </span>
+              </span> */}
             </div>
 
             {/* Dot on the centre line (desktop only) */}
@@ -62,7 +62,7 @@ export default function MemoriesPage() {
 
             {/* Caption */}
             <div className={`max-w-sm justify-self-center text-center md:row-start-1 ${placement[m.side].caption}`}>
-              <span className="mb-2 inline-block text-xs font-bold tracking-widest text-saddle uppercase">{m.date}</span>
+              {/* <span className="mb-2 inline-block  font-bold  text-saddle ">{m.date}</span> */}
               <h3 className="mb-2 font-script text-4xl text-espresso">{m.title}</h3>
               <p className="text-sm leading-relaxed text-muted">{m.description}</p>
               <span className="mt-3 inline-block text-2xl text-caramel">♡</span>

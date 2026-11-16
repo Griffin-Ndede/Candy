@@ -15,21 +15,21 @@ export const heroImage = photo(11);
 const captions = [
   // Memory 01  (photo 1.jpg)
   {
-    date: "The beginning",
-    title: "When our story began",
-    description: "Somehow, in a world full of people, I found you. And everything became a little more beautiful.",
+    date: "In the beninging",
+    title: "The first movie date we went to together",
+    description: "The conversation we had after the movie hapo Sarit ndo ilifanya nikajua you are kind and thoughtful. Specifically the reason you gave me for wanting to study psychology so you can help special needs kids. I knew then that you were a special person and I wanted to be around you more.",
   },
   // Memory 02  (photo 2.jpg)
   {
-    date: "A beautiful day",
-    title: "Your smile, my favourite view",
-    description: "There are moments I wish I could pause forever. Being with you is one of them.",
+    date: "You showed up for my birthday",
+    title: "Your made the day special for me",
+    description: "This reinforced the fact that you are a kind person and the care and attention you gave to the kids.",
   },
   // Memory 03  (photo 3.jpg)
   {
-    date: "Little adventures",
-    title: "Making memories with you",
-    description: "It is never really about where we go. It is about the person beside me when we get there.",
+    date: "Swinging hapa na pale",
+    title: "Always create time for enjoyment",
+    description: "This was so much fun.",
   },
   // Memory 04  (photo 4.jpg)
   {
