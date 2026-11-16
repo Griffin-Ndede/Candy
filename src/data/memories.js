@@ -15,7 +15,7 @@ export const heroImage = photo(11);
 const captions = [
   // Memory 01  (photo 1.jpg)
   {
-    title: "The first movie date we went to and the interesting conversations we had after the movie",
+    title: "The first movie date we went on and the interesting conversations we had after the movie",
   },
   // Memory 02  (photo 2.jpg)
   {
