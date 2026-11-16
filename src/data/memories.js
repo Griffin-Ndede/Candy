@@ -1,10 +1,9 @@
 // All editable content lives here.
-export const SONG_ID = "nSDgHBxUbVQ"; // YouTube video id of "our song"
+export const SONG_ID = "u2ah9tWTkmk"; // YouTube video id of "our song"
 
 // Photos live in /public/photos and are numbered 1.jpg ... 38.jpg.
 // The Nth caption below is shown next to the Nth photo (Memory 01 = 1.jpg, Memory 02 = 2.jpg, ...).
 const photo = (n) => `/photos/${n}.jpg`;
-
 export const heroImage = photo(11);
 
 // ---------------------------------------------------------------------------
