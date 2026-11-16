@@ -3,7 +3,6 @@ import { NavLink, Link } from "react-router-dom";
 const links = [
   { to: "/", label: "Home", end: true },
   { to: "/memories", label: "Memories" },
-  { to: "/letter", label: "Letter" },
 ];
 
 export default function Navbar({ menuOpen, onToggleMenu, musicPlaying, musicReady, onToggleMusic }) {
