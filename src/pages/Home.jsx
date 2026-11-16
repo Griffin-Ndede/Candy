@@ -15,30 +15,42 @@ export default function Home() {
           data-reveal
           className="relative z-10 w-full max-w-3xl translate-y-6 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
         >
-          <p className="mb-4 block text-xs font-bold tracking-widest text-saddle uppercase">
+          <p className="mb-4 block  font-light text-xl  text-saddle">
             A little website, made with love
           </p>
 
-          <h1 className="font-script text-6xl text-espresso md:text-8xl">
+          <h1 className=" text-xl text-espresso md:text-6xl">
             Happy Birthday,
-            <span className="block text-saddle italic">Sweets</span>
           </h1>
+          <span className="block font-script text-saddle text-8xl">Sweets</span>
 
           <p className="mx-auto mt-5 mb-8 max-w-lg text-lg leading-relaxed text-muted">
-            To the girl who makes my world softer, brighter, and so much more beautiful.
+            To the girl who makes my world softer, brighter, and so much more
+            beautiful.
           </p>
 
-          <div className="relative mx-auto mb-8 w-64 md:w-80">
+          <div className="relative mx-auto mb-8 ">
             <div className="aspect-square animate-float overflow-hidden rounded-3xl shadow-xl">
-              <img src={heroImage} alt="A special memory together" className="size-full object-cover" />
+              <img
+                src={heroImage}
+                alt="A special memory together"
+                className="size-full object-cover"
+              />
             </div>
-            <span className="absolute -top-4 -right-4 animate-float-slow text-4xl text-saddle">♥</span>
-            <span className="absolute -bottom-4 -left-4 animate-float-slow text-3xl text-saddle">♡</span>
+            <span className="absolute -top-4 -right-4 animate-float-slow text-4xl text-saddle">
+              ♥
+            </span>
+            <span className="absolute -bottom-4 -left-4 animate-float-slow text-3xl text-saddle">
+              ♡
+            </span>
           </div>
 
           <button
             className="inline-flex cursor-pointer items-center justify-center gap-3 rounded-full bg-saddle px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-1 hover:bg-espresso"
-            onClick={() => { rainHearts(); navigate("/memories"); }}
+            onClick={() => {
+              rainHearts();
+              navigate("/memories");
+            }}
           >
             Explore our memories <span>↓</span>
           </button>
@@ -46,7 +58,10 @@ export default function Home() {
           <div className="mt-4">
             <button
               className="mx-auto flex cursor-pointer items-center gap-2 rounded-full border border-saddle/20 bg-white/60 px-4 py-2 text-sm text-saddle disabled:cursor-wait disabled:opacity-60"
-              onClick={() => { music.toggle(); rainHearts(); }}
+              onClick={() => {
+                music.toggle();
+                rainHearts();
+              }}
               disabled={!music.ready}
             >
               <span>{music.playing ? "Ⅱ" : "♫"}</span>
@@ -59,7 +74,7 @@ export default function Home() {
         </div>
 
         <div
-          className="absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-xs tracking-widest text-muted"
+          className="absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-xs  text-muted"
           aria-hidden="true"
         >
           <span className="h-7 w-px animate-scroll-dot bg-caramel" />
@@ -73,18 +88,21 @@ export default function Home() {
           data-reveal
           className="max-w-2xl translate-y-6 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
         >
-          <span className="mb-4 block text-xs font-bold tracking-widest text-saddle uppercase">
-            To my favourite person
+
+          <span className="mb-4 block  font-light text-xl  text-saddle">
+            To my favourite person and best friend.
           </span>
           <h2 className="mb-5 font-script text-5xl text-espresso md:text-6xl">
             Some people make life feel like a love song.
           </h2>
           <p className="leading-loose text-muted">
-            You are one of the most beautiful parts of my life. This little corner of the
-            internet is for us: for the moments we have shared, the memories I hold close,
-            and all the ones still waiting for us.
+            You are one of the most beautiful parts of my life. This little
+            corner of the internet is for us: for the moments we have shared,
+            the memories I hold close, and all the ones still waiting for us.
           </p>
-          <span className="mt-6 block font-script text-3xl text-saddle">With all my love, always ♥</span>
+          <span className="mt-6 block font-script text-3xl text-saddle">
+            With all my love, always ♥
+          </span>
         </div>
       </section>
     </>
