@@ -54,14 +54,8 @@
 
 /* ------------------------------------------------------------------
    The few things utilities can't express cleanly: the heart clip-path
-   and multi-stop gradients. Used like normal classes (bg-hero, heart-clip).
+   and multi-stop gradients. Used like normal classes (bg-hero, bg-memories).
 ------------------------------------------------------------------- */
-@utility heart-clip {
-  clip-path: polygon(
-    50% 91%, 42% 84%, 25% 69%, 9% 51%, 2% 37%, 3% 23%, 11% 12%, 24% 7%, 36% 10%, 50% 23%,
-    64% 10%, 76% 7%, 89% 12%, 97% 23%, 98% 37%, 91% 51%, 75% 69%, 58% 84%
-  );
-}
 @utility bg-hero {
   background:
     radial-gradient(ellipse at 15% 20%, #fff 0, transparent 35%),
@@ -77,7 +71,6 @@
 @utility bg-timeline {
   background: linear-gradient(to bottom, transparent, #c9a27e 5%, #c9a27e 95%, transparent);
 }
-@utility bg-memory-heart { background: linear-gradient(135deg, #dcc0a0, #b08968); }
 @utility bg-love { background: linear-gradient(135deg, #fbf4ec, #ecd9c3); }
 @utility bg-finale { background: linear-gradient(135deg, #6f4a35, #3b2418); }
 
