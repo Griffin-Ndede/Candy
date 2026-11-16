@@ -3,10 +3,10 @@
 export const SONG_ID = "u2ah9tWTkmk"; // YouTube video id of "our song"
 
 const img = {
-  first: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80",
-  second: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80",
-  third: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800&q=80",
-  fourth: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=80",
+  first: "images/1.jpeg",
+  second: "images/2.jpeg",
+  third: "images/3.jpeg",
+  fourth: "images/4.jpeg",
 };
 
 export const heroImage = img.first;
