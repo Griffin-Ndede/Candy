@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Design tokens. Every colour, font, breakpoint and animation used by
+   the site is defined here and becomes a Tailwind utility:
+   bg-cream, text-espresso, text-saddle, bg-caramel, font-script,
+   animate-float, animate-beat, max-md:..., etc.
+------------------------------------------------------------------- */
+@theme {
+  --color-cream: #faf3ea;
+  --color-sand: #efe0cf;
+  --color-caramel: #b08968;   /* soft accent  */
+  --color-saddle: #7f5539;    /* main accent  */
+  --color-espresso: #3e2723;  /* headings     */
+  --color-body: #5d4037;      /* body text    */
+  --color-muted: #8d6e63;     /* secondary    */
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-script: "Sacramento", cursive;
+
+  /* "md" is 700px so max-md: matches the original mobile breakpoint */
+  --breakpoint-md: 43.75rem;
+
+  --animate-float: float 5s ease-in-out infinite;
+  --animate-float-slow: float 3.5s ease-in-out infinite;
+  --animate-beat: beat 1.7s ease-in-out infinite;
+  --animate-beat-slow: beat 2s ease-in-out infinite;
+  --animate-scroll-dot: scroll-dot 1.5s ease-in-out infinite;
+  --animate-fall: fall linear forwards;
+  --animate-fade-in: fade-in .25s ease both;
+  --animate-letter-open: letter-open .4s ease both;
+
+  @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  @keyframes beat {
+    0%, 100% { transform: scale(1); } 15% { transform: scale(1.12); }
+    30% { transform: scale(1); } 45% { transform: scale(1.07); }
+  }
+  @keyframes scroll-dot {
+    0%, 100% { opacity: .35; transform: scaleY(.7); transform-origin: top; }
+    50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+  }
+  @keyframes fall {
+    0% { transform: translate3d(0, -5vh, 0) rotate(0deg); opacity: 0; }
+    10% { opacity: .9; }
+    90% { opacity: .75; }
+    100% { transform: translate3d(var(--drift), 110vh, 0) rotate(var(--heart-rotation)); opacity: 0; }
+  }
+  @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes letter-open {
+    from { opacity: 0; transform: translateY(20px) scale(.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+}
+
+/* ------------------------------------------------------------------
+   The few things utilities can't express cleanly: the heart clip-path
+   and multi-stop gradients. Used like normal classes (bg-hero, heart-clip).
+------------------------------------------------------------------- */
+@utility heart-clip {
+  clip-path: polygon(
+    50% 91%, 42% 84%, 25% 69%, 9% 51%, 2% 37%, 3% 23%, 11% 12%, 24% 7%, 36% 10%, 50% 23%,
+    64% 10%, 76% 7%, 89% 12%, 97% 23%, 98% 37%, 91% 51%, 75% 69%, 58% 84%
+  );
+}
+@utility bg-hero {
+  background:
+    radial-gradient(ellipse at 15% 20%, #fff 0, transparent 35%),
+    radial-gradient(ellipse at 85% 80%, #e6ccb2 0, transparent 38%),
+    linear-gradient(135deg, #faf3ea, #f3e5d4 50%, #ecd5bb);
+}
+@utility bg-memories {
+  background:
+    radial-gradient(ellipse at 10% 25%, rgb(230 204 178 / 42%), transparent 35%),
+    radial-gradient(ellipse at 90% 70%, rgb(230 204 178 / 45%), transparent 38%),
+    #faf3ea;
+}
+@utility bg-timeline {
+  background: linear-gradient(to bottom, transparent, #c9a27e 5%, #c9a27e 95%, transparent);
+}
+@utility bg-memory-heart { background: linear-gradient(135deg, #dcc0a0, #b08968); }
+@utility bg-love { background: linear-gradient(135deg, #fbf4ec, #ecd9c3); }
+@utility bg-finale { background: linear-gradient(135deg, #6f4a35, #3b2418); }
+
+@layer base {
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      scroll-behavior: auto !important;
+      animation-duration: .01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: .01ms !important;
+    }
+  }
+}
