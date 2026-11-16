@@ -38,7 +38,7 @@ export default function MemoriesPage() {
 
         {memories.map((m, index) => (
           <article
-            key={`${m.date}-${index}`}
+            key={`${m.title}-${index}`}
             data-reveal
             className="mb-16 grid translate-y-6 items-center gap-4 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100 md:mb-10 md:grid-cols-[1fr_3rem_1fr] md:gap-6"
           >
@@ -62,7 +62,6 @@ export default function MemoriesPage() {
 
             {/* Caption */}
             <div className={`max-w-sm justify-self-center text-center md:row-start-1 ${placement[m.side].caption}`}>
-              {/* <span className="mb-2 inline-block  font-bold  text-saddle ">{m.date}</span> */}
               <h3 className="mb-2 font-script text-4xl text-espresso">{m.title}</h3>
               <p className="text-sm leading-relaxed text-muted">{m.description}</p>
               <span className="mt-3 inline-block text-2xl text-caramel">♡</span>
