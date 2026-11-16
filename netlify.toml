@@ -5,7 +5,7 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Make /memories and /letter work on refresh / direct links
+# Make /memories work on refresh / direct links
 [[redirects]]
   from = "/*"
   to = "/index.html"

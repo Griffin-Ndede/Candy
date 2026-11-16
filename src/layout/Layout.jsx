@@ -6,7 +6,6 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 import { useYouTubeMusic } from "../hooks/useYouTubeMusic";
 import HeartConfetti from "../components/HeartConfetti";
 import Navbar from "../components/Navbar";
-import Finale from "../components/Finale";
 
 // Lives above all routes so the music + confetti keep running while navigating.
 export default function Layout() {
@@ -42,8 +41,6 @@ export default function Layout() {
       />
 
       <Outlet context={{ rainHearts, music }} />
-
-      {/* <Finale onRainHearts={rainHearts} /> */}
     </main>
   );
 }

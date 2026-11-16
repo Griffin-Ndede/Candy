@@ -6,7 +6,7 @@ npm run dev      # http://localhost:5173
 npm run build    # outputs dist/
 ```
 
-Routes: `/` Home, `/memories`, `/letter`.
+Routes: `/` Home (hero, intro, love note and birthday letter), `/memories`.
 
 ## Where things live
 - `src/styles/tailwind.css`  Tailwind theme: brown palette, fonts (Sacramento + DM Sans), 700px breakpoint, animations, heart clip-path.
