@@ -1,4 +1,4 @@
-import { BTN, BTN_PRIMARY, HEART_FRAME, HEART_IMG, KICKER, P, REVEAL } from "../lib/ui";
+import { BTN, BTN_PRIMARY, PHOTO_FRAME, PHOTO_IMG, KICKER, P, REVEAL } from "../lib/ui";
 
 export default function Hero({ image, musicPlaying, musicReady, onExplore, onToggleMusic }) {
   return (
@@ -18,8 +18,8 @@ export default function Hero({ image, musicPlaying, musicReady, onExplore, onTog
         </p>
 
         <div className="relative mx-auto mb-7 w-[min(300px,70vw)] max-md:w-[min(250px,68vw)]">
-          <div className={`${HEART_FRAME} w-full animate-float`}>
-            <img src={image} alt="A special memory together" className={HEART_IMG} />
+          <div className={`${PHOTO_FRAME} w-full animate-float`}>
+            <img src={image} alt="A special memory together" className={PHOTO_IMG} />
           </div>
           <span className="absolute right-[-8%] top-[15%] z-2 animate-float-slow text-[2.5rem] text-saddle">♥</span>
           <span className="absolute left-[-9%] bottom-[20%] z-2 animate-float-slow text-[2rem] text-saddle [animation-delay:-1.5s]">♡</span>

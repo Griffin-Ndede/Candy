@@ -21,7 +21,7 @@ export const BTN =
 export const BTN_PRIMARY =
   "bg-linear-135 from-[#a47148] to-saddle text-white shadow-[0_10px_25px_rgb(127_85_57/20%)] hover:shadow-[0_14px_30px_rgb(127_85_57/30%)]";
 
-export const HEART_FRAME =
-  "group/frame heart-clip relative block aspect-square overflow-hidden bg-[#d4b595] drop-shadow-[0_16px_22px_rgb(94_60_40/15%)]";
-export const HEART_IMG =
+export const PHOTO_FRAME =
+  "group/frame relative block aspect-square overflow-hidden rounded-3xl bg-[#d4b595] shadow-[0_16px_30px_rgb(94_60_40/18%)]";
+export const PHOTO_IMG =
   "absolute inset-0 size-full object-cover object-center transition-transform duration-700 group-hover/frame:scale-[1.07]";

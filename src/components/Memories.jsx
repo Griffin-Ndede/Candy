@@ -1,4 +1,5 @@
-import { H2, HEART_FRAME, HEART_IMG, KICKER, NAV_SECTION, P, REVEAL, REVEAL_LG } from "../lib/ui";
+import FloatingHeart from "./FloatingHeart";
+import { H2, PHOTO_FRAME, PHOTO_IMG, KICKER, NAV_SECTION, P, REVEAL, REVEAL_LG } from "../lib/ui";
 
 const placement = {
   left: {
@@ -32,8 +33,11 @@ export default function Memories({ memories }) {
             <div
               className={`group w-[min(100%,310px)] row-start-1 ${placement[m.side].content} max-md:col-start-2 max-md:w-[min(100%,320px)] max-md:justify-self-start`}
             >
-              <div className={`${HEART_FRAME} bg-memory-heart w-full drop-shadow-[0_14px_24px_rgb(94_60_40/14%)] transition-transform duration-[350ms] group-hover:-rotate-2 group-hover:scale-[1.025] max-md:w-[min(100%,300px)]`}>
-                <img src={m.image} alt={m.title} className={HEART_IMG} loading="lazy" />
+              <div className="relative w-full max-md:w-[min(100%,300px)]">
+                <div className={`${PHOTO_FRAME} w-full transition-transform duration-[350ms] group-hover:-rotate-2 group-hover:scale-[1.025]`}>
+                  <img src={m.image} alt={m.title} className={PHOTO_IMG} loading="lazy" />
+                </div>
+                <FloatingHeart corner={m.side === "left" ? "left" : "right"} />
               </div>
               <span className="mt-3 block text-center text-[.72rem] tracking-[.12em] text-muted uppercase max-md:text-left">
                 Memory {String(index + 1).padStart(2, "0")}
