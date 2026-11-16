@@ -1,43 +1,254 @@
 // All editable content lives here.
 export const SONG_ID = "u2ah9tWTkmk"; // YouTube video id of "our song"
 
-// Photos live in /public/photos and are numbered 1..38 (web-optimised copies of /public/images).
-// Memory 01 on the page uses 1.jpg, Memory 02 uses 2.jpg, and so on.
-export const PHOTO_COUNT = 38;
+// Photos live in /public/photos and are numbered 1.jpg ... 38.jpg.
+// The Nth caption below is shown next to the Nth photo (Memory 01 = 1.jpg, Memory 02 = 2.jpg, ...).
 const photo = (n) => `/photos/${n}.jpg`;
 
 export const heroImage = photo(11);
 
-// Captions for the first five memories. Edit these freely.
-const written = [
-  { date: "The beginning", title: "When our story began",
-    description: "Somehow, in a world full of people, I found you. And everything became a little more beautiful." },
-  { date: "A beautiful day", title: "Your smile, my favourite view",
-    description: "There are moments I wish I could pause forever. Being with you is one of them." },
-  { date: "Little adventures", title: "Making memories with you",
-    description: "It is never really about where we go. It is about the person beside me when we get there." },
-  { date: "My favourite person", title: "You make ordinary days special",
-    description: "The laughs, the conversations, and the little things that might seem ordinary to everyone else. They mean everything to me." },
-  { date: "Today and always", title: "More memories to come",
-    description: "This is only a small collection of moments. I cannot wait for all the beautiful chapters we have yet to write." },
+// ---------------------------------------------------------------------------
+// CAPTIONS: just type over the text in quotes for each memory.
+// Keep the order (slot 1 first, slot 38 last) and keep the commas and quotes.
+// If you ever want fewer memories, delete a whole { ... }, block from the end.
+// ---------------------------------------------------------------------------
+const captions = [
+  // Memory 01  (photo 1.jpg)
+  {
+    date: "The beginning",
+    title: "When our story began",
+    description: "Somehow, in a world full of people, I found you. And everything became a little more beautiful.",
+  },
+  // Memory 02  (photo 2.jpg)
+  {
+    date: "A beautiful day",
+    title: "Your smile, my favourite view",
+    description: "There are moments I wish I could pause forever. Being with you is one of them.",
+  },
+  // Memory 03  (photo 3.jpg)
+  {
+    date: "Little adventures",
+    title: "Making memories with you",
+    description: "It is never really about where we go. It is about the person beside me when we get there.",
+  },
+  // Memory 04  (photo 4.jpg)
+  {
+    date: "My favourite person",
+    title: "You make ordinary days special",
+    description: "The laughs, the conversations, and the little things that might seem ordinary to everyone else. They mean everything to me.",
+  },
+  // Memory 05  (photo 5.jpg)
+  {
+    date: "Today and always",
+    title: "More memories to come",
+    description: "This is only a small collection of moments. I cannot wait for all the beautiful chapters we have yet to write.",
+  },
+  // Memory 06  (photo 6.jpg)
+  {
+    date: "Another moment",
+    title: "Just us",
+    description: "Every picture of us is a little reminder of how happy you make me.",
+  },
+  // Memory 07  (photo 7.jpg)
+  {
+    date: "Simple joys",
+    title: "Happy with you",
+    description: "The best moments are the ones I get to share with you.",
+  },
+  // Memory 08  (photo 8.jpg)
+  {
+    date: "Together",
+    title: "Forever my favourite",
+    description: "Out of every moment, the ones with you are the ones I keep.",
+  },
+  // Memory 09  (photo 9.jpg)
+  {
+    date: "A memory to keep",
+    title: "Smiles for days",
+    description: "Some memories never fade. This one is going straight into my heart.",
+  },
+  // Memory 10  (photo 10.jpg)
+  {
+    date: "Another moment",
+    title: "Just us",
+    description: "Every picture of us is a little reminder of how happy you make me.",
+  },
+  // Memory 11  (photo 11.jpg)
+  {
+    date: "Simple joys",
+    title: "Happy with you",
+    description: "The best moments are the ones I get to share with you.",
+  },
+  // Memory 12  (photo 12.jpg)
+  {
+    date: "Together",
+    title: "Forever my favourite",
+    description: "Out of every moment, the ones with you are the ones I keep.",
+  },
+  // Memory 13  (photo 13.jpg)
+  {
+    date: "A memory to keep",
+    title: "Smiles for days",
+    description: "Some memories never fade. This one is going straight into my heart.",
+  },
+  // Memory 14  (photo 14.jpg)
+  {
+    date: "Another moment",
+    title: "Just us",
+    description: "Every picture of us is a little reminder of how happy you make me.",
+  },
+  // Memory 15  (photo 15.jpg)
+  {
+    date: "Simple joys",
+    title: "Happy with you",
+    description: "The best moments are the ones I get to share with you.",
+  },
+  // Memory 16  (photo 16.jpg)
+  {
+    date: "Together",
+    title: "Forever my favourite",
+    description: "Out of every moment, the ones with you are the ones I keep.",
+  },
+  // Memory 17  (photo 17.jpg)
+  {
+    date: "A memory to keep",
+    title: "Smiles for days",
+    description: "Some memories never fade. This one is going straight into my heart.",
+  },
+  // Memory 18  (photo 18.jpg)
+  {
+    date: "Another moment",
+    title: "Just us",
+    description: "Every picture of us is a little reminder of how happy you make me.",
+  },
+  // Memory 19  (photo 19.jpg)
+  {
+    date: "Simple joys",
+    title: "Happy with you",
+    description: "The best moments are the ones I get to share with you.",
+  },
+  // Memory 20  (photo 20.jpg)
+  {
+    date: "Together",
+    title: "Forever my favourite",
+    description: "Out of every moment, the ones with you are the ones I keep.",
+  },
+  // Memory 21  (photo 21.jpg)
+  {
+    date: "A memory to keep",
+    title: "Smiles for days",
+    description: "Some memories never fade. This one is going straight into my heart.",
+  },
+  // Memory 22  (photo 22.jpg)
+  {
+    date: "Another moment",
+    title: "Just us",
+    description: "Every picture of us is a little reminder of how happy you make me.",
+  },
+  // Memory 23  (photo 23.jpg)
+  {
+    date: "Simple joys",
+    title: "Happy with you",
+    description: "The best moments are the ones I get to share with you.",
+  },
+  // Memory 24  (photo 24.jpg)
+  {
+    date: "Together",
+    title: "Forever my favourite",
+    description: "Out of every moment, the ones with you are the ones I keep.",
+  },
+  // Memory 25  (photo 25.jpg)
+  {
+    date: "A memory to keep",
+    title: "Smiles for days",
+    description: "Some memories never fade. This one is going straight into my heart.",
+  },
+  // Memory 26  (photo 26.jpg)
+  {
+    date: "Another moment",
+    title: "Just us",
+    description: "Every picture of us is a little reminder of how happy you make me.",
+  },
+  // Memory 27  (photo 27.jpg)
+  {
+    date: "Simple joys",
+    title: "Happy with you",
+    description: "The best moments are the ones I get to share with you.",
+  },
+  // Memory 28  (photo 28.jpg)
+  {
+    date: "Together",
+    title: "Forever my favourite",
+    description: "Out of every moment, the ones with you are the ones I keep.",
+  },
+  // Memory 29  (photo 29.jpg)
+  {
+    date: "A memory to keep",
+    title: "Smiles for days",
+    description: "Some memories never fade. This one is going straight into my heart.",
+  },
+  // Memory 30  (photo 30.jpg)
+  {
+    date: "Another moment",
+    title: "Just us",
+    description: "Every picture of us is a little reminder of how happy you make me.",
+  },
+  // Memory 31  (photo 31.jpg)
+  {
+    date: "Simple joys",
+    title: "Happy with you",
+    description: "The best moments are the ones I get to share with you.",
+  },
+  // Memory 32  (photo 32.jpg)
+  {
+    date: "Together",
+    title: "Forever my favourite",
+    description: "Out of every moment, the ones with you are the ones I keep.",
+  },
+  // Memory 33  (photo 33.jpg)
+  {
+    date: "A memory to keep",
+    title: "Smiles for days",
+    description: "Some memories never fade. This one is going straight into my heart.",
+  },
+  // Memory 34  (photo 34.jpg)
+  {
+    date: "Another moment",
+    title: "Just us",
+    description: "Every picture of us is a little reminder of how happy you make me.",
+  },
+  // Memory 35  (photo 35.jpg)
+  {
+    date: "Simple joys",
+    title: "Happy with you",
+    description: "The best moments are the ones I get to share with you.",
+  },
+  // Memory 36  (photo 36.jpg)
+  {
+    date: "Together",
+    title: "Forever my favourite",
+    description: "Out of every moment, the ones with you are the ones I keep.",
+  },
+  // Memory 37  (photo 37.jpg)
+  {
+    date: "A memory to keep",
+    title: "Smiles for days",
+    description: "Some memories never fade. This one is going straight into my heart.",
+  },
+  // Memory 38  (photo 38.jpg)
+  {
+    date: "Another moment",
+    title: "Just us",
+    description: "Every picture of us is a little reminder of how happy you make me.",
+  },
 ];
 
-// Placeholder captions for memories 6+ (cycled). Override any single one in `custom` below.
-const generic = [
-  { date: "Another moment", title: "Just us", description: "Every picture of us is a little reminder of how happy you make me." },
-  { date: "Simple joys", title: "Happy with you", description: "The best moments are the ones I get to share with you." },
-  { date: "Together", title: "Forever my favourite", description: "Out of every moment, the ones with you are the ones I keep." },
-  { date: "A memory to keep", title: "Smiles for days", description: "Some memories never fade. This one is going straight into my heart." },
-];
-
-// Give any memory its own caption by number, e.g. 12: { date: "...", title: "...", description: "..." }
-const custom = {};
-
-export const memories = Array.from({ length: PHOTO_COUNT }, (_, i) => {
-  const n = i + 1;
-  const text = custom[n] ?? (i < written.length ? written[i] : generic[(i - written.length) % generic.length]);
-  return { ...text, image: photo(n), side: i % 2 === 0 ? "left" : "right" };
-});
+// Builds the memories list: photo N goes with caption N, alternating left / right.
+export const memories = captions.map((caption, i) => ({
+  ...caption,
+  image: photo(i + 1),
+  side: i % 2 === 0 ? "left" : "right",
+}));
 
 export const letter = {
   title: "To my Candy,",
