@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 /* ------------------------------------------------------------------
-   Design tokens. Every colour, font, breakpoint and animation used by
-   the site is defined here and becomes a Tailwind utility:
+   Design tokens. Every colour, font and animation used by the site is
+   defined here and becomes a normal Tailwind utility:
    bg-cream, text-espresso, text-saddle, bg-caramel, font-script,
-   animate-float, animate-beat, max-md:..., etc.
+   animate-float, animate-beat, etc.
 ------------------------------------------------------------------- */
 @theme {
   --color-cream: #faf3ea;
@@ -17,9 +17,6 @@
 
   --font-sans: "DM Sans", sans-serif;
   --font-script: "Sacramento", cursive;
-
-  /* "md" is 700px so max-md: matches the original mobile breakpoint */
-  --breakpoint-md: 43.75rem;
 
   --animate-float: float 5s ease-in-out infinite;
   --animate-float-slow: float 3.5s ease-in-out infinite;
@@ -51,28 +48,6 @@
     to { opacity: 1; transform: translateY(0) scale(1); }
   }
 }
-
-/* ------------------------------------------------------------------
-   The few things utilities can't express cleanly: the heart clip-path
-   and multi-stop gradients. Used like normal classes (bg-hero, bg-memories).
-------------------------------------------------------------------- */
-@utility bg-hero {
-  background:
-    radial-gradient(ellipse at 15% 20%, #fff 0, transparent 35%),
-    radial-gradient(ellipse at 85% 80%, #e6ccb2 0, transparent 38%),
-    linear-gradient(135deg, #faf3ea, #f3e5d4 50%, #ecd5bb);
-}
-@utility bg-memories {
-  background:
-    radial-gradient(ellipse at 10% 25%, rgb(230 204 178 / 42%), transparent 35%),
-    radial-gradient(ellipse at 90% 70%, rgb(230 204 178 / 45%), transparent 38%),
-    #faf3ea;
-}
-@utility bg-timeline {
-  background: linear-gradient(to bottom, transparent, #c9a27e 5%, #c9a27e 95%, transparent);
-}
-@utility bg-love { background: linear-gradient(135deg, #fbf4ec, #ecd9c3); }
-@utility bg-finale { background: linear-gradient(135deg, #6f4a35, #3b2418); }
 
 @layer base {
   @media (prefers-reduced-motion: reduce) {
