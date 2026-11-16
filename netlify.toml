@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Make /memories and /letter work on refresh / direct links
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
