@@ -17,7 +17,7 @@ export default function Hero({ image, musicPlaying, musicReady, onExplore, onTog
           To the girl who makes my world softer, brighter, and so much more beautiful.
         </p>
 
-        <div className="relative mx-auto mb-7 w-[min(300px,70vw)] max-md:w-[min(250px,68vw)]">
+        <div className="relative mx-auto mb-7 ">
           <div className={`${PHOTO_FRAME} w-full animate-float`}>
             <img src={image} alt="A special memory together" className={PHOTO_IMG} />
           </div>
