@@ -43,7 +43,7 @@ export default function MemoriesPage() {
             className="mb-16 grid translate-y-6 items-center gap-4 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100 md:mb-10 md:grid-cols-[1fr_3rem_1fr] md:gap-6"
           >
             {/* Photo */}
-            <div className={`group w-full max-w-xs justify-self-center md:row-start-1 ${placement[m.side].photo}`}>
+            <div className={`group w-full max justify-self-center md:row-start-1 ${placement[m.side].photo}`}>
               <div className="relative">
                 <div className="aspect-square overflow-hidden rounded-3xl bg-sand shadow-xl transition duration-300 group-hover:-rotate-2 group-hover:scale-105">
                   <img src={m.image} alt={m.title} className="size-full object-cover" loading="lazy" />
@@ -62,7 +62,7 @@ export default function MemoriesPage() {
 
             {/* Caption */}
             <div className={`max-w-sm justify-self-center text-center md:row-start-1 ${placement[m.side].caption}`}>
-              <h3 className="mb-2 font-script text-4xl text-espresso">{m.title}</h3>
+              <h3 className="mb-2  text-xl text-espresso">{m.title}</h3>
               <p className="text-sm leading-relaxed text-muted">{m.description}</p>
               <span className="mt-3 inline-block text-2xl text-caramel">♡</span>
             </div>

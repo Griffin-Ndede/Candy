@@ -22,9 +22,7 @@ export default function Home() {
           data-reveal
           className="relative z-10 w-full max-w-3xl translate-y-6 opacity-0 transition duration-700 data-[visible=true]:translate-y-0 data-[visible=true]:opacity-100"
         >
-          {/* <p className="mb-4 block text-xl font-light text-saddle">
-            This part of my life is called
-          </p> */}
+         
 
           <h1 className=" text-xl text-espresso md:text-6xl">
             Happy Birthday,
@@ -102,8 +100,7 @@ export default function Home() {
             A dedication to my favourite person and best friend
           </h2>
           <p className="leading-loose text-muted">
-            You are one of the most beautiful part of my life Some people make life feel like a love song. You are one of the most
-            beautiful parts of my life. This little corner of the internet is
+            This part of my life that I share with you is called love and happiness. This little corner of the internet is
             for us: for the moments we have shared, the memories I hold close,
             and all the ones still waiting for us.
           </p>
